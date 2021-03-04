@@ -1,0 +1,120 @@
+ {% extends "base.html" %} {% block body_block %}
+
+<div class="preloader d-flex align-items-center justify-content-center">
+    <div class="spinner"></div>
+</div>
+
+<header class="header-area">
+    <div class="famie-main-menu">
+        <div class="classy-nav-container breakpoint-off">
+            <div class="container">
+                <div id="google_translate_element"></div>
+                <nav class="classy-navbar justify-content-between" id="famieNav">
+                    <a href="index.html" class="nav-brand">Farm Friend</a>
+                    <div class="classy-navbar-toggler">
+                        <span class="navbarToggler"><span></span><span></span><span></span></span>
+                    </div>
+                    <div class="classy-menu">
+                        <div class="classycloseIcon">
+                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                        </div>
+                        <div class="classynav">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="">About</a></li>
+                                <li><a href="weather.html">Weather</a></li>
+                                <li><a href="askquestion.html">Ask Questions</a></li>
+                                <li><a href="">News</a></li>
+                                <li class="active"><a href="register.html">Register</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<section id="contact" class="py-3" style="background: url('static/img/bg-img/1.jpg');">
+    <form method="POST">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card p-4">
+                        <div class="card-body">
+                            <h3 class="text-center">Please fill out this form</h3>
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="firstname">First Name</label>
+                                        <input type="text" id="firstname" name="firstname" class="form-control" placeholder="First Name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="lastname">Last Name</label>
+                                        <input type="text" id="secondname" name="lastname" class="form-control" placeholder="Last Name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="phone">Phone Number</label>
+                                        <input type="text" id="phone" name="phone" class="form-control" placeholder="Phone Number">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="state">State</label>
+                                        <input type="text" id="state" name="state" class="form-control" placeholder="State">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="district">District</label>
+                                        <input type="text" id="district" name="district" class="form-control" placeholder="District">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="pin">Pin Code</label>
+                                        <input type="text" id="pin" name="pin" class="form-control" placeholder="Pin Code">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="address">Address</label>
+                                        <input type="textarea" id="address" name="address" class="form-control" placeholder="Address">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 p-5">
+                                <div class="form-group">
+                                    <input type="submit" value="Submit" class="btn btn-outline-danger btn-block">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </form>
+</section>
+
+{% endblock %}

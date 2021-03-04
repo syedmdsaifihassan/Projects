@@ -1,0 +1,71 @@
+ {% extends "base.html" %} {% block body_block %}
+
+<div class="preloader d-flex align-items-center justify-content-center">
+    <div class="spinner"></div>
+</div>
+
+<header class="header-area">
+    <div class="famie-main-menu">
+        <div class="classy-nav-container breakpoint-off">
+            <div class="container">
+                <div id="google_translate_element"></div>
+                <nav class="classy-navbar justify-content-between" id="famieNav">
+                    <a href="index.html" class="nav-brand">Farm Friend</a>
+                    <div class="classy-navbar-toggler">
+                        <span class="navbarToggler"><span></span><span></span><span></span></span>
+                    </div>
+                    <div class="classy-menu">
+                        <div class="classycloseIcon">
+                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                        </div>
+                        <div class="classynav">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="">About</a></li>
+                                <li><a href="weather.html">Weather</a></li>
+                                <li class="active"><a href="askquestion.html">Ask Questions</a></li>
+                                <li><a href="">News</a></li>
+                                <li><a href="register.html">Register</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<section id="contact" class="py-3" style="background: url('static/img/bg-img/n1.jpg');">
+    <form method="POST">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card p-4">
+                        <div class="card-body">
+                            <h3 class="text-center">Ask Questions</h3>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="">
+                    <!-- Chat Bot -->
+                    <section class="p-4">
+                        <object data="https://web.leena.ai/?clientId=1VBGDLznwLZNu2z7vMkmE" width="100%" height="600px">
+	                     <embed src="https://web.leena.ai/?clientId=1VBGDLznwLZNu2z7vMkmE" width="100%" height="600px"> </embed>
+	                        Error: Embedded data could not be displayed.
+	                    </object>
+                    </section>
+                </div>
+            </div>
+        </div>
+        </div>
+    </form>
+</section>
+
+{% endblock %}

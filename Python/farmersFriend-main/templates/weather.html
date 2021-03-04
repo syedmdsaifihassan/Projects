@@ -1,0 +1,70 @@
+ {% extends "base.html" %} {% block body_block %}
+
+<div class="preloader d-flex align-items-center justify-content-center">
+    <div class="spinner"></div>
+</div>
+
+<header class="header-area">
+    <div class="famie-main-menu">
+        <div class="classy-nav-container breakpoint-off">
+            <div class="container">
+                <div id="google_translate_element"></div>
+                <nav class="classy-navbar justify-content-between" id="famieNav">
+                    <a href="index.html" class="nav-brand">Farm Friend</a>
+                    <div class="classy-navbar-toggler">
+                        <span class="navbarToggler"><span></span><span></span><span></span></span>
+                    </div>
+                    <div class="classy-menu">
+                        <div class="classycloseIcon">
+                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                        </div>
+                        <div class="classynav">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="">About</a></li>
+                                <li class="active"><a href="weather">Weather</a></li>
+                                <li><a href="askquestion.html">Ask Questions</a></li>
+                                <li><a href="news.html">News</a></li>
+                                <li><a href="register.html">Register</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section id="contact" class="py-3" style="background: url('static/img/bg-img/n1.jpg');">
+    <form method="POST">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card p-4">
+                        <div class="card-body">
+                            <h3 class="text-center">Weather Updates</h3>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Weather Forecast -->
+        <section id="tweets" class="py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <a class="twitter-timeline" href="https://twitter.com/Indiametdept?ref_src=twsrc%5Etfw">Tweets by Indiametdept</a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </form>
+</section>
+
+{% endblock %}
